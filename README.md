@@ -48,8 +48,6 @@ The `LinkedList` is implemented as a class in TypeScript. It supports three prim
 
 ```
 
-
-
 ### Testing
 
 #### Manual Testing
@@ -57,15 +55,10 @@ The `LinkedList` is implemented as a class in TypeScript. It supports three prim
 A simple test file (`LinkedListTest.ts`) is provided to manually verify the functionality of the linked list.
 
 To run the TypeScript file:
-1. Compile the TypeScript file to JavaScript:
-    ```bash
-    npx tsc LinkedListTest.ts
-    ```
-2. Run the compiled JavaScript file:
-    ```bash
-    node LinkedListTest.js
-    ```
-
+```bash
+npx tsc
+node LinkedListTest.js
+```
 
 #### Automated Testing with Jest
 
