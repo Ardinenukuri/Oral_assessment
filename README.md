@@ -59,6 +59,7 @@ To run the TypeScript file:
 npx tsc
 node LinkedListTest.js
 ```
+---
 
 #### Automated Testing with Jest
 
