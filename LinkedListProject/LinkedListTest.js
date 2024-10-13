@@ -1,28 +1,25 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const LinkedList_1 = __importDefault(require("./LinkedList"));
-const list = new LinkedList_1.default();
+var LinkedList_1 = require("./LinkedList");
+var list = new LinkedList_1.default();
 console.log('Adding elements...');
-list.add(10);
-list.add(20);
-list.add(30);
+list.add(11);
+list.add(22);
+list.add(33);
 list.print();
-console.log('Finding element 20...');
-const foundNode = list.find(20);
+console.log('Finding element 22...');
+var foundNode = list.find(22);
 if (foundNode) {
     console.log('Found:', foundNode.data);
 }
 else {
     console.log('Element not found.');
 }
-console.log('Removing element 20...');
-const isRemoved = list.remove(20);
+console.log('Removing element 22...');
+var isRemoved = list.remove(22);
 console.log('Removed:', isRemoved);
 list.print();
 console.log('Removing element 100 (non-existent)...');
-const isRemovedAgain = list.remove(100);
+var isRemovedAgain = list.remove(100);
 console.log('Removed:', isRemovedAgain);
 list.print();

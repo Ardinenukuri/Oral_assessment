@@ -3,21 +3,21 @@ import LinkedList from './LinkedList';
 const list = new LinkedList<number>();
 
 console.log('Adding elements...');
-list.add(10);
-list.add(20);
-list.add(30);
+list.add(11);
+list.add(22);
+list.add(33);
 list.print();
 
-console.log('Finding element 20...');
-const foundNode = list.find(20);
+console.log('Finding element 22...');
+const foundNode = list.find(22);
 if (foundNode) {
   console.log('Found:', foundNode.data);
 } else {
   console.log('Element not found.');
 }
 
-console.log('Removing element 20...');
-const isRemoved = list.remove(20);
+console.log('Removing element 22...');
+const isRemoved = list.remove(22);
 console.log('Removed:', isRemoved);
 list.print();
 

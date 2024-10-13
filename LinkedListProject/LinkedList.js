@@ -1,36 +1,37 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Node {
-    constructor(data) {
+var Node = /** @class */ (function () {
+    function Node(data) {
         this.data = data;
         this.next = null;
     }
-}
-class LinkedList {
-    constructor() {
+    return Node;
+}());
+var LinkedList = /** @class */ (function () {
+    function LinkedList() {
         this.head = null;
     }
-    add(data) {
-        const newNode = new Node(data);
+    LinkedList.prototype.add = function (data) {
+        var newNode = new Node(data);
         if (!this.head) {
             this.head = newNode;
         }
         else {
-            let current = this.head;
+            var current = this.head;
             while (current.next) {
                 current = current.next;
             }
             current.next = newNode;
         }
-    }
-    remove(data) {
+    };
+    LinkedList.prototype.remove = function (data) {
         if (!this.head)
             return false;
         if (this.head.data === data) {
             this.head = this.head.next;
             return true;
         }
-        let current = this.head;
+        var current = this.head;
         while (current.next && current.next.data !== data) {
             current = current.next;
         }
@@ -39,20 +40,21 @@ class LinkedList {
             return true;
         }
         return false;
-    }
-    find(data) {
-        let current = this.head;
+    };
+    LinkedList.prototype.find = function (data) {
+        var current = this.head;
         while (current && current.data !== data) {
             current = current.next;
         }
         return current;
-    }
-    print() {
-        let current = this.head;
+    };
+    LinkedList.prototype.print = function () {
+        var current = this.head;
         while (current) {
             console.log(current.data);
             current = current.next;
         }
-    }
-}
+    };
+    return LinkedList;
+}());
 exports.default = LinkedList;
