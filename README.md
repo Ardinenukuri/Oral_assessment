@@ -2,9 +2,10 @@
 
 ## Project Overview
 
-This project contains two key components:
-1. **LinkedList Manipulation**: A TypeScript-based implementation of a Linked List data structure, allowing adding, removing, and finding elements in the list.
-2. **Temperature Converter**: A React class component (written in TypeScript) that converts temperatures between Celsius and Fahrenheit.
+This project consists of two main components:
+
+1. **LinkedList Manipulation**: A TypeScript-based implementation of a Linked List data structure that allows adding, removing, and finding elements in the list.
+2. **Temperature Converter**: A class-based React component (written in TypeScript) that converts temperatures between Celsius and Fahrenheit.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -19,16 +20,16 @@ This project contains two key components:
 
 ## Installation
 
-To get started, clone this repository and install the dependencies for both sections of the assignment.
+To get started, follow these steps to clone the repository and install dependencies for both components of the project.
 
 ### Steps:
-1. Clone the repository:
+1. **Clone the repository**:
     ```bash
     git clone <repository-url>
     cd <repository-directory>
     ```
 
-2. Install dependencies for the React Temperature Converter project:
+2. **Install dependencies for the Temperature Converter**:
     ```bash
     cd temperature-converter
     npm install
@@ -40,38 +41,43 @@ To get started, clone this repository and install the dependencies for both sect
 
 ### Implementation
 
-The `LinkedList` is implemented as a class in TypeScript. It supports three primary operations:
-- **Add**: Append a new node to the list.
-- **Remove**: Delete a node by value.
-- **Find**: Search for a node by value.
+The LinkedList is implemented as a TypeScript class, supporting the following primary operations:
 
-
-```
+- **Add**: Appends a new node to the list.
+- **Remove**: Deletes a node by its value.
+- **Find**: Searches for a node by its value.
 
 ### Testing
 
 #### Manual Testing
 
-A simple test file (`LinkedListTest.ts`) is provided to manually verify the functionality of the linked list.
+To manually verify the functionality of the linked list, a test file (`LinkedListTest.ts`) is provided.
 
 To run the TypeScript file:
-```bash
-npx tsc
-node LinkedListTest.js
-```
----
+
+1. Compile the TypeScript file:
+    ```bash
+    npx tsc LinkedListTest.ts
+    ```
+
+2. Run the compiled JavaScript file:
+    ```bash
+    node LinkedListTest.js
+    ```
 
 #### Automated Testing with Jest
 
-For automated testing, the project uses **Jest**. The test file `LinkedList.test.ts` includes unit tests for the linked list methods.
+Automated testing for the linked list methods is implemented using **Jest**. The test file `LinkedList.test.ts` includes unit tests for adding, removing, and finding nodes.
 
 To run the tests:
-1. Install Jest:
+
+1. **Install Jest**:
     ```bash
     npm install --save-dev jest @types/jest ts-jest
     npx ts-jest config:init
     ```
-2. Run the tests:
+
+2. **Run the tests**:
     ```bash
     npm test
     ```
@@ -82,34 +88,37 @@ To run the tests:
 
 ### Implementation
 
-The Temperature Converter is implemented as a class-based React component in TypeScript. It allows users to convert temperatures between Celsius and Fahrenheit.
+The Temperature Converter is implemented as a class-based React component using TypeScript. It allows users to input a temperature and select the scale (Celsius or Fahrenheit), then displays the converted temperature in the other scale.
 
 #### Key Features:
-- Input field for temperature.
-- Dropdown to select the temperature scale (Celsius or Fahrenheit).
-- Converted temperature displayed below the input.
-
-
+- **Input field**: Allows users to enter the temperature.
+- **Dropdown menu**: Lets users select between Celsius and Fahrenheit.
+- **Converted temperature**: Displays the converted temperature based on the selected scale.
 
 ### Testing
 
 #### Manual Testing
 
-To manually verify the Temperature Converter:
+To manually test the functionality of the Temperature Converter:
+
 1. Start the React development server:
     ```bash
     npm start
     ```
-2. Open the browser at `http://localhost:3000` and test the temperature conversion functionality.
+
+2. Open your browser and go to `http://localhost:3000` to test the temperature conversion.
 
 #### Automated Testing with Jest & React Testing Library
 
-Automated tests are written using **Jest** and **React Testing Library** in `TemperatureConverter.test.tsx`.
+Automated tests for the Temperature Converter are written using **Jest** and **React Testing Library** in the `TemperatureConverter.test.tsx` file.
 
 To run the tests:
+
 ```bash
 npm test
 ```
+
+---
 
 ## License
 
@@ -117,4 +126,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Feel free to modify the README as per your specific project needs! Let me know if you need further assistance!
