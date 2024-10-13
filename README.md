@@ -75,8 +75,6 @@ To run the tests:
     npm test
     ```
 
----
-
 ## Temperature Converter
 
 ### Implementation
@@ -109,8 +107,6 @@ To run the tests:
 ```bash
 npm test
 ```
-
----
 
 ## License
 
